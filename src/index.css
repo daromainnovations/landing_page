@@ -1,0 +1,249 @@
+@import "tailwindcss";
+
+.logo-footer {
+  height: 4rem; /* Ajusta la altura según sea necesario */
+  width: auto; /* Mantiene la proporción original del logo */
+}
+
+.app{
+  background-color: #0b1417;
+}
+
+
+
+
+
+
+
+
+
+/* ============================================
+   🧠 ANIMATED NEURAL NETWORK - CANVAS BASED
+   ============================================ */
+
+/* Fondo base */
+#cta-section {
+  background: #050a0f;
+  position: relative;
+  min-height: 600px;
+}
+
+/* Canvas de red neuronal */
+#cta-section canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* Contenedor interior - glassmorphism premium */
+#cta-section .cta-inner {
+  position: relative;
+  border: 1px solid rgba(96, 165, 250, 0.3);
+  border-radius: 24px;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.6),
+    0 0 0 1px rgba(255, 255, 255, 0.05) inset,
+    0 20px 60px rgba(59, 130, 246, 0.25),
+    0 0 100px rgba(139, 92, 246, 0.15);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+#cta-section .cta-inner:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 
+    0 20px 60px rgba(0, 0, 0, 0.7),
+    0 0 0 1px rgba(255, 255, 255, 0.1) inset,
+    0 30px 90px rgba(59, 130, 246, 0.35),
+    0 0 120px rgba(139, 92, 246, 0.2);
+  border-color: rgba(96, 165, 250, 0.5);
+}
+
+/* Línea de escaneo superior animada */
+#cta-section .cta-inner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(96, 165, 250, 0.5) 20%,
+    rgba(167, 139, 250, 1) 50%,
+    rgba(96, 165, 250, 0.5) 80%,
+    transparent 100%
+  );
+  filter: blur(2px);
+  animation: scan-line 4s ease-in-out infinite;
+  box-shadow: 0 0 20px rgba(167, 139, 250, 0.8);
+}
+
+@keyframes scan-line {
+  0% { left: -100%; opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { left: 100%; opacity: 0; }
+}
+
+/* Línea de escaneo lateral */
+#cta-section .cta-inner::after {
+  content: '';
+  position: absolute;
+  top: -100%;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(96, 165, 250, 0.5) 20%,
+    rgba(167, 139, 250, 1) 50%,
+    rgba(96, 165, 250, 0.5) 80%,
+    transparent 100%
+  );
+  filter: blur(2px);
+  animation: side-scan 5s ease-in-out infinite 2s;
+  box-shadow: 0 0 20px rgba(167, 139, 250, 0.8);
+}
+
+@keyframes side-scan {
+  0% { top: -100%; opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { top: 100%; opacity: 0; }
+}
+
+/* Brillo en las esquinas */
+#cta-section .cta-inner .corner-glow {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  filter: blur(40px);
+  pointer-events: none;
+  animation: corner-pulse 3s ease-in-out infinite;
+}
+
+@keyframes corner-pulse {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.2); }
+}
+
+/* Mejoras en el input */
+#cta-section input[type="email"] {
+  transition: all 0.3s ease;
+}
+
+#cta-section input[type="email"]:focus {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 
+    0 0 20px rgba(59, 130, 246, 0.4),
+    0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Mejoras en el botón */
+#cta-section button {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+#cta-section button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    transparent 100%
+  );
+  transition: left 0.6s ease;
+}
+
+#cta-section button:hover::before {
+  left: 100%;
+}
+
+#cta-section button:active {
+  transform: scale(0.98);
+}
+
+/* Animación del icono de regalo */
+#cta-section .gift-icon-wrapper {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Respeta preferencias de movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+  #cta-section .cta-inner,
+  #cta-section .cta-inner::before,
+  #cta-section .cta-inner::after,
+  #cta-section button,
+  #cta-section .gift-icon-wrapper {
+    animation: none !important;
+    transition: none !important;
+  }
+  
+  #cta-section .cta-inner:hover {
+    transform: translateY(-2px);
+  }
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  #cta-section {
+    min-height: 500px;
+  }
+  
+  #cta-section .cta-inner {
+    border-radius: 16px;
+  }
+}
+
+/* Asegurar que el texto sea legible */
+#cta-section h2,
+#cta-section p,
+#cta-section input,
+#cta-section button {
+  position: relative;
+  z-index: 1;
+}
+
+/* Mejora de contraste en el mensaje de éxito */
+#cta-section .success-message {
+  backdrop-filter: blur(12px);
+  animation: success-pop 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+@keyframes success-pop {
+  0% { transform: scale(0.8); opacity: 0; }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Efecto hover en el contenedor del icono */
+#cta-section .gift-icon-wrapper:hover {
+  animation: float 3s ease-in-out infinite, icon-glow 1.5s ease-in-out infinite;
+}
+
+@keyframes icon-glow {
+  0%, 100% { 
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+  }
+  50% { 
+    box-shadow: 0 0 40px rgba(59, 130, 246, 0.6);
+  }
+}
