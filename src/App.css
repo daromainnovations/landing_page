@@ -7,8 +7,6 @@
 */
 /* @plugin "tailwindcss-animate"; */
 
-/* Variante dark (Tailwind v4) */
-@custom-variant dark (&:is(.dark *));
 
 /* Tokens de marca (OKLCH) */
 :root {
@@ -104,7 +102,7 @@
 }
 
 /* Mapeo de variables → tokens Tailwind v4 */
-@theme inline {
+:root {
   --font-sans: "Inter", system-ui, -apple-system, sans-serif; /* evita var(--font-geist-*) si no las tienes */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -146,7 +144,7 @@
 
 /* Base layer con utilidades mapeadas */
 @layer base {
-  * { @apply border-border outline-ring/50; }
+  * { @apply border border-border outline outline-ring/50; }
   body { @apply bg-background text-foreground; }
 }
 

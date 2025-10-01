@@ -14,7 +14,7 @@ export function HeroSection() {
       <div className="mx-auto max-w-5xl">
         <div className="text-center">
           {/* Logo */}
-          <div className="mb-12 flex justify-center">
+          <div className="mb-6 flex justify-center">
            <img src={logo} alt="olawee" />
           </div>
 
