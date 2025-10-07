@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card"
-import { Clock, TrendingUp, Users, MessageCircle } from "lucide-react"
+import { Clock, Users, MessageCircle, BrainCircuit } from "lucide-react"
 
 const benefits = [
   {
@@ -9,7 +9,7 @@ const benefits = [
     description: "Colabora eficientemente compartiendo recursos personalizados y creando red entre organizaciones.",
   },
   {
-    icon: TrendingUp,
+    icon: BrainCircuit,
     iconColor: "bg-purple-500",
     title: "Selecciona tus IAs",
     description:
