@@ -3,30 +3,30 @@ import { Clock, TrendingUp, Users, MessageCircle } from "lucide-react"
 
 const benefits = [
   {
-    icon: Clock,
+    icon: Users,
     iconColor: "bg-blue-500",
-    title: "Automatiza tareas repetitivas",
-    description: "Gana tiempo eliminando procesos manuales y enfócate en lo que realmente importa para tu negocio.",
+    title: "Comparte asistentes, prompts a empresas y colectivos",
+    description: "Colabora eficientemente compartiendo recursos personalizados y creando red entre organizaciones.",
   },
   {
     icon: TrendingUp,
     iconColor: "bg-purple-500",
-    title: "Potencia la productividad",
+    title: "Selecciona tus IAs",
     description:
-      "Impulsa el rendimiento de tu equipo con herramientas inteligentes que optimizan cada flujo de trabajo.",
+      "Elige entre distintos modelos y proveedores para cada necesidad concreta de tu entidad.",
   },
   {
-    icon: Users,
+    icon: Clock,
     iconColor: "bg-blue-600",
-    title: "Comparte agentes y prompts",
-    description: "Colabora eficientemente compartiendo agentes de IA y prompts personalizados dentro de tu empresa.",
+    title: "Automatiza tareas y aumenta productividad",
+    description: "Libera horas de trabajo eliminando procesos repetitivos y enfócate en lo estratégico.",
   },
   {
     icon: MessageCircle,
     iconColor: "bg-teal-500",
     title: "Community OLAWEE",
     description:
-      "Únete a una comunidad activa de profesionales que comparten conocimientos, mejores prácticas y casos de uso.",
+      "Un espacio vivo donde profesionales y entidades comparten experiencias, casos de uso y buenas prácticas.",
   },
 ]
 

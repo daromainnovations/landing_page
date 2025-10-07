@@ -1,97 +1,4 @@
 
-// // src/components/cta-section.tsx
-// import type React from "react"
-// import { useState } from "react"
-// import { Button } from "./ui/button"
-// import { Input } from "./ui/input"
-// import { CheckCircle2, Gift, Mail } from "lucide-react"
-
-// export function CTASection() {
-//   const [email, setEmail] = useState("")
-//   const [submitted, setSubmitted] = useState(false)
-
-//   const handleSubmit = (e: React.FormEvent) => {
-//     e.preventDefault()
-//     if (email) {
-//       console.log("[v0] Email submitted:", email)
-//       setSubmitted(true)
-//       setTimeout(() => {
-//         setEmail("")
-//         setSubmitted(false)
-//       }, 3000)
-//     }
-//   }
-
-//   return (
-//     <section id="cta-section" className="px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-//       <div className="div-section-cta mx-auto max-w-4xl">
-//         <div className="div-section-cta rounded-3xl p-8 sm:p-12 lg:p-16 shadow-lg">
-//           {/* Gift Icon */}
-//           <div className="mb-8 flex justify-center">
-//             <div className="inline-flex h-16 w-16 items-center justify-center rounded-full bg-blue-100">
-//               <Gift className="h-8 w-8 text-blue-600" />
-//             </div>
-//           </div>
-
-//           {/* Headline */}
-//           <h2 className="mb-4 text-balance text-center text-3xl font-bold text-blue-100 sm:text-4xl">
-//             Participa en el sorteo exclusivo
-//           </h2>
-
-//           {/* Description */}
-//           <p className="mb-8 text-pretty text-center text-base leading-relaxed text-gray-500 sm:text-lg">
-//             Regístrate ahora y sé de los primeros en probar Olawee. Los primeros registrados entrarán en un sorteo
-//             exclusivo con premios especiales.
-//           </p>
-
-//           {/* Form */}
-//           {submitted ? (
-//             <div className="mx-auto flex max-w-md items-center justify-center gap-2 rounded-lg bg-white p-4 text-green-700 shadow-sm">
-//               <CheckCircle2 className="h-5 w-5" />
-//               <span className="font-medium">¡Gracias! Te contactaremos pronto.</span>
-//             </div>
-//           ) : (
-//             <form onSubmit={handleSubmit} className="mx-auto max-w-md">
-//               <div className="flex flex-col gap-3 sm:flex-row">
-//                 <div className="relative flex-1">
-//                   <Mail className="absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-400" />
-//                   <Input
-//                     type="email"
-//                     placeholder="tu@email.com"
-//                     value={email}
-//                     onChange={(e) => setEmail(e.target.value)}
-//                     required
-//                     className="pl-10 h-12 bg-white border-gray-300"
-//                   />
-//                 </div>
-//                 <Button type="submit" size="lg" className="bg-blue-600 hover:bg-blue-700 text-white h-12 px-8">
-//                   Registrarme
-//                 </Button>
-//               </div>
-//             </form>
-//           )}
-
-//           {/* Footer text */}
-//           <p className="mt-6 text-center text-sm text-gray-600">
-//             Al registrarte, aceptas recibir actualizaciones sobre el lanzamiento
-//           </p>
-//         </div>
-//       </div>
-//     </section>
-//   )
-// }
-
-
-
-
-
-
-
-
-
-
-
-
 // src/components/cta-section.tsx
 import type React from "react"
 import { useState } from "react"
@@ -99,7 +6,7 @@ import { Button } from "./ui/button"
 import { Input } from "./ui/input"
 import { CheckCircle2, Gift, Mail } from "lucide-react"
 
-import videoBackground from "../assets/video_bueno.mp4"
+import videoBackground from "../assets/video-bueno.mp4"
 
 export default function CTASection() {
   const [email, setEmail] = useState("")
