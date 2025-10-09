@@ -11,12 +11,6 @@
 
 
 
-
-
-
-
-
-
 /* ============================================
    🧠 ANIMATED NEURAL NETWORK - CANVAS BASED
    ============================================ */
@@ -246,4 +240,19 @@
   50% { 
     box-shadow: 0 0 40px rgba(59, 130, 246, 0.6);
   }
+}
+
+
+.logo-olawee {
+  width: 550px;
+  height: auto;
+}
+
+
+.btn-cta {
+  padding: 2rem 4rem; /* Ajusta el padding para hacerlo más grande */
+  font-size: 1.125rem; /* Aumenta el tamaño de la fuente */
+  border-radius: 9999px; /* Botón completamente redondeado */
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transición suave */
 }
