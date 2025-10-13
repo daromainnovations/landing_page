@@ -14,7 +14,7 @@ export function Footer() {
           {/* Launch Date */}
           <div className="text-center sm:text-right">
             <p className="text-sm text-gray-600">
-              Lanzamiento: <span className="font-semibold">15 de octubre de 2025</span>
+              Lanzamiento: <span className="font-semibold">22 de octubre de 2025</span>
             </p>
           </div>
         </div>

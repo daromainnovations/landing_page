@@ -107,7 +107,7 @@ export function HeroSection() {
 
           {/* Subtitle */}
           <p className="mx-auto mb-10 max-w-2xl text-pretty text-lg leading-relaxed text-gray-100/90">
-            No te quedes fuera: el <strong>15 de octubre</strong> revelamos la app que cambiará tu empresa. Regístrate y
+            No te quedes fuera: el <strong>22 de octubre</strong> revelamos la app que cambiará tu empresa. Regístrate y
             participa en el sorteo exclusivo
           </p>
 
